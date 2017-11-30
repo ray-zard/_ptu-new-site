@@ -1,0 +1,136 @@
+.services {
+
+}
+
+.doc {
+	margin-top: 3rem;
+
+	.doc-img {
+
+	}
+
+	.doc-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+}
+
+.services-header {
+	font-size: 2rem;
+	font-weight: bold;
+	color: $bg-dark;
+}
+
+.services-text {
+	color: $main-dark;
+}
+
+.services-btn {
+	text-align: right;
+	text-transform: uppercase;
+	color: $l-green;
+	&:hover {
+		color: lighten($l-green, 5%);
+	}
+
+}
+
+.services-block {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.services-wrapper {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.services-description {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 2rem;
+}
+
+.services-product {
+	position: relative;
+	width: 25%;
+	margin: 0;
+
+	img {
+		width: 100%;
+	}
+
+	h3 {
+		color: $white;
+		font-weight: bold;
+		font-size: 1rem;
+		padding: 1rem;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+	}
+	
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+	}
+
+	&::before {
+		color: $white;
+		content: "\f061"; 
+		position: absolute;
+		@include absolute-center;
+		transform: translate(-50%, -50%) rotate3d(0, 1, 0, 90deg);
+		transition: transform .3s ease-in;
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 1.6rem;
+    text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		z-index: 100;
+	}
+	
+	&:nth-child(odd) {
+		&::after {
+			background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+		}
+
+		h3 {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	&:hover {
+		&::before {
+			transform: translate(-50%, -50%) rotate3d(1, 0, 0, 0deg);
+			transition: transform .25s ease-in;
+		}
+		&::after {
+			background: linear-gradient(45deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+		}
+		&:nth-child(odd) {
+			&::after {
+				background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+			}
+		}
+	}
+}

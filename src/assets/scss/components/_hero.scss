@@ -1,0 +1,168 @@
+.hero {
+	position: relative;
+	background: $bg-dark;
+	height: 100vh;
+	background: url(../img/bg-ptu.jpg)50% 50%;
+	background-size: cover;
+
+	.logo-container {
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: center;
+		p {
+			text-transform: uppercase;
+			color: $white;
+			opacity: .75;
+			font-size: 1rem;
+		}
+	}
+
+	.contacts {
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-start;
+		& > a {
+			color: $l-green;
+			text-decoration: underline;
+		}
+		ul {
+			margin: 0;
+		}
+		li {
+			text-align: right;
+			font-size: 1.15rem;
+			list-style: none;
+			line-height: 1.4;
+			a {
+				color: $white;
+				transition: .3 ease-out .3;
+				&:hover {
+					opacity: .5;
+					transition: .3 ease-in .3;
+				}
+			}
+			i {
+				font-size: 1.5rem;
+				color: $l-green;
+			}
+		}
+	}
+
+	.header {
+		text-transform: uppercase;
+		color: $white;
+		font-weight: bold;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+	}
+	
+	& > .grid-container {
+		position: relative;
+		height: 100%;
+		z-index: 100;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 50%;
+		background: linear-gradient(to right, rgba(41,32,30,1) 0%,rgba(41,32,30,0) 100%);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 50%;
+		background: linear-gradient(to left, rgba(41,32,30,1) 0%,rgba(41,32,30,0) 100%);
+	}
+}
+
+.hero-bg {
+	padding-top: 2rem;
+}
+
+
+.hero-logo {
+	height: 70px;
+	align-self: center;
+}
+
+.privileges {
+
+	margin-top: 10vh;
+
+}
+
+.privileges-logo {
+	background-color: $l-green;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100%;
+}
+
+.privileges-content {
+	a {
+		color: $white;
+		font-weight: bold;
+		text-decoration: underline;
+		display: block;
+	}
+}
+
+.privileges-subcontent {
+	position: relative;
+	margin-top: 1rem; 
+	background-color:rgba(0, 0, 0, 0.3);
+	padding: .4rem .8rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 2px;
+		background-color: $l-green;
+	}
+	
+	span {
+		color: $white;
+		opacity: .7;
+		line-height: 1.2;
+		display: inline-block;
+	}
+
+}
+
+.sub-content {
+	background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
+	height: 200px;
+	border-bottom: 1px $l-gray solid;
+	border-top: 1px $l-gray solid;
+	
+	.grid-container {
+		height: 100%;
+		display: flex;
+    align-items: center;
+	}
+
+	.cell {
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+}
