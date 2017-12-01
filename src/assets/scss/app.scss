@@ -4,6 +4,8 @@
 @import 'main-settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'slick.scss';
+@import 'slick-theme.scss';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -58,3 +60,5 @@
 @import 'components/services';
 @import 'components/eco-book';
 @import 'components/collective';
+@import 'components/events';
+@import 'components/footer';

@@ -1,0 +1,163 @@
+.events {
+	height: 600px;
+	display: flex;
+	align-items: center;
+
+	&__wrapper {
+		display: flex;
+		height: 480px;
+		width: 100%;
+		border: 1px solid $l-gray;
+	}
+	
+	&__navigation {
+		height: 100%;
+		width: 20%;
+		background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+	}
+
+	&__contol-btn {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		line-height: 1.2;
+		font-size: 1rem;
+		text-transform: uppercase;
+		padding: .8rem 1rem;
+		color: $main-dark; 
+		background-color: rgba(255, 255, 255, 0.6);
+		border-bottom: 1px solid $l-gray;
+		
+		&:hover {
+			color: $bg-dark;
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+
+		&.slick-active {
+			position: relative;
+			background-color: $l-green;
+			color: $white;
+
+			&::after {
+				position: absolute;
+				content: "";
+				left: 100%;
+				top: 0;
+				bottom: 0;
+				border-style: solid;
+				border-width: 50px 0 50px 16px;
+				border-color: transparent transparent transparent $l-green;
+			}
+		}
+	}
+	
+	&__carousel {
+		flex-grow: 1;
+		padding: 2rem 3rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		display: flex;
+		flex-wrap: wrap;
+		width: 260px;
+		height: 100%;
+		border: 1px solid $l-gray;
+		overflow: hidden;
+		margin: 0 0.5rem;
+	}
+
+	&__thumbnail {
+		background-color: $l-gray;
+		width: 100%;
+		height: 80px;
+
+		.events__card:hover & {
+			background-color: darken($l-gray, 10%);
+		}
+	}
+
+	&__img {
+		position: relative;
+		top: 1rem;
+		left: 1rem;
+		border-radius: 100%;
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+
+	&__description {
+		margin-top: 2rem;
+		padding: 1rem;
+		max-height: 240px;
+
+		h3 {
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		p {
+			// font-size: 0.9rem;
+			line-height: 1.2;
+		}
+	}
+
+	&__event-btn {
+		position: relative;
+		width: 100%;
+		padding: 1rem 1.2rem;
+		display: flex;
+		justify-content: flex-end;
+		align-self: flex-end;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			border-top: 1px solid $l-gray;
+			margin: 0 1rem;
+		}
+
+		a {
+			color: $l-green;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.sub-content.question {
+	.cell {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	p {
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: $l-green;
+		width: 100%;
+	}
+	a {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		background-color: $accent;
+		font-weight: bold;
+	}
+}
