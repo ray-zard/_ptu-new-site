@@ -11,9 +11,22 @@ import './lib/foundation-explicit-pieces';
 
 $(document).foundation();
 
-// $(document).ready(function() {
-// 	$('.your-class').slick({
-// 		"slidesToShow": 2, 
-// 		"slidesToScroll": 2
-// 	});
-// });
+$(document).ready(function() {
+	
+	$(window).scroll(function() {
+	
+		var scrollBody = $(window).scrollTop();
+		
+		if (scrollBody != 0) {
+			$("#navigation").css("top", "0");
+		} else {
+			$("#navigation").css("top", "-60px");
+		}
+	
+	});
+	
+	// $('.your-class').slick({
+		// 	"slidesToShow": 2, 
+		// 	"slidesToScroll": 2
+		// });
+});
