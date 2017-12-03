@@ -1,11 +1,18 @@
 .eco-book {
-	min-height: 1080px;
+	min-height: 980px;
 	height: 100vh;
 	background: url(../img/line_diagonal2_black.png), linear-gradient(45deg, rgba(24,21,21,1) 0%,rgba(58,46,40,1) 100%);
 }
 
+.eco-book-container {
+	height: 100%;
+}
+
 .eco-book-content {
-	padding-top: 3rem;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 3rem 0;
 	position: relative;
 }
 
@@ -72,23 +79,32 @@
 }
 
 .doc-list {
+	align-self: flex-end;
 	padding: 1.2rem;
+	padding-bottom: 0;
 	background: linear-gradient(to bottom, rgba(229,229,229,1) 79%,rgba(255,255,255,1) 98%);
 	p {
 		font-size: 18px;
 		border-bottom: 1px dashed $l-green;
 		padding-bottom: 1.2rem;
-		margin-bottom: 2rem;
+		margin: 0;
 	}
+
+	&__footer {
+		text-align: right;
+	}
+
 	a {
+		display: inline-block;
 		color: $l-green;
 		text-transform: uppercase;
-		display: inline;
 		text-align: right;
+		padding: 1rem;
 	}
 }
 
 .doc-sublist {
+	align-self: flex-end;
 	h4 {
 		font-size: 18px;
 		color: $l-green;
@@ -97,5 +113,6 @@
 	p {
 		line-height: 1.2;
 		color: $white;
+		margin: .3rem;
 	}
 }

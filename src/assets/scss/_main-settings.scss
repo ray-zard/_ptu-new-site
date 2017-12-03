@@ -14,3 +14,14 @@ $d-gray: #878787;
 $main-dark: #666;
 $bg-dark: #29201e;
 $accent:  #ea3944;
+
+
+.btn-l-green {
+	color: $l-green;
+	transition: color .25s ease-out;
+
+	&:hover {
+		color: lighten($l-green, 7%);
+		transition: color .25s ease-in;
+	}
+}

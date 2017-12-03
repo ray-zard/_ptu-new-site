@@ -28,11 +28,11 @@ main > .navigation {
 
 	.contacts {
 		display: flex;
-    flex-wrap: wrap;
-		justify-content: flex-end;
-		align-items: flex-start;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
 		& > a {
-			color: $l-green;
 			text-decoration: underline;
 		}
 		ul {
@@ -45,9 +45,10 @@ main > .navigation {
 			line-height: 1.4;
 			a {
 				color: $white;
+				opacity: .7;
 				transition: .3 ease-out .3;
 				&:hover {
-					opacity: .5;
+					opacity: 1;
 					transition: .3 ease-in .3;
 				}
 			}
@@ -55,6 +56,10 @@ main > .navigation {
 				font-size: 1.5rem;
 				color: $l-green;
 			}
+		}
+		
+		&__btn {
+			margin-top: .5rem;
 		}
 	}
 
@@ -111,8 +116,33 @@ main > .navigation {
 }
 
 .privileges {
-
 	margin-top: 10vh;
+
+	&__link {
+		display: block;
+		color: $white;
+		font-weight: bold;
+		margin-bottom: .3rem;
+	}
+
+	&__link-icon {
+		transition: transform .3s ease-in, color .1s .2s;
+
+		.privileges__link:hover & {
+			color: $l-green;
+			transform: rotate3d(0, 1, 0, 360deg) scale(1.4);
+			transition: transform .5s ease-out, color .1s .2s;
+		}
+		
+	}
+	
+	&__link-text {
+		text-decoration: underline;
+		
+		.privileges__link:hover & {
+			color: $white;
+		}
+	}
 
 }
 
@@ -123,14 +153,6 @@ main > .navigation {
 	border-radius: 100%;
 }
 
-.privileges-content {
-	a {
-		color: $white;
-		font-weight: bold;
-		text-decoration: underline;
-		display: block;
-	}
-}
 
 .privileges-subcontent {
 	position: relative;
