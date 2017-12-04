@@ -11,6 +11,9 @@ import "./lib/foundation-explicit-pieces";
 $(document).foundation();
 
 $(document).ready(function() {
+
+  // Materialize.updateTextFields();
+
   $(window).scroll(function() {
     var scrollBody = $(window).scrollTop();
 
@@ -60,6 +63,20 @@ $(document).ready(function() {
     $("button[data-slide]:nth-child(" + (currentSlide + 1) + ")").addClass(
       "active"
     );
-	});
-	
+  });
+  
+  $("#slickOne, #slickTwo, #slickThree").slick({
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+		autoplaySpeed: 5000,
+    rows: 'window',
+    slidesToShow: 3,
+    arrows: false,
+    swipe: false,
+    variableWidth: true,
+    arrows: true,
+    prevArrow: $('.slick-prev')
+  });
+
 });

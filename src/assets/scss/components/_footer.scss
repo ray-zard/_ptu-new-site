@@ -53,6 +53,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-content: center;
+		padding-top: 1rem;
 	}
 
 	&__contact {
@@ -73,7 +74,11 @@
 				}
 			}
 		}
-
+		&:last-child {
+			i {
+				font-size: 1.6rem;
+			}
+		}
 		i {
 			font-size: 2rem;
 			color: $l-green;

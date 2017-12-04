@@ -1,0 +1,64 @@
+.service-page {
+	margin-bottom: 3rem;
+	h1 {
+		color: $d-gray;
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin: 3rem 0;
+	}
+
+	&__list {
+		color: $bg-dark;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 2rem;
+	}
+
+	&__form {
+		background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
+		border: 1px solid $l-gray;
+		padding-top: 1rem;
+	}
+
+	&__form-btn {
+		margin: 0;
+		margin-top: .5rem;
+		background-color: $l-green;
+		text-transform: uppercase;
+		padding: 1em;
+
+		&:hover {
+			background-color: lighten($l-green, 7%);
+		}
+	}
+	
+	&__img {
+		margin-bottom: 2rem;
+	}
+
+	&__privilege {
+		position: relative;
+		background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		color: $l-green;
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		padding-left: 4rem;
+		border: 1px solid $l-gray;
+
+		&::before {
+			position: absolute;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: 1.8rem;
+			color: $accent;
+			content: "\f00c";
+			@include vertical-center;
+			left: 1rem;
+		}
+	}
+
+}

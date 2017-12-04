@@ -79,7 +79,7 @@
 	&__card {
 		display: flex;
 		flex-wrap: wrap;
-		width: 260px;
+		width: 265px;
 		height: 100%;
 		border: 1px solid $l-gray;
 		overflow: hidden;
@@ -176,4 +176,34 @@
 
 .slick-initialized .slick-slide {
 	display: flex;
+}
+
+.slick-list,
+.slick-track {
+    height: 100%;
+}
+
+.slick-prev {
+	display: none;
+}
+
+.slick-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+	@include vertical-center;
+	background-color: $l-gray;
+	padding: 1rem;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius: 100%;
+	padding-right: .5rem;
+
+	&::before {
+		content: "\f061";
+		font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    line-height: 1;
+	}
 }
