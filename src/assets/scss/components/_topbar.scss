@@ -12,8 +12,26 @@
 	}
 }
 
+.top-bar-left {
+	display: flex;
+	@media screen and (max-width: 1444px) {
+		flex-wrap: wrap;
+		.menu {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.top-bar-right {
+	.menu {
+		
+	}
+}
+
 
 .menu {
+	display: flex;
+	justify-content: flex-end;
 	a {
 		color: $main-dark;
 		transition: color .2 ease-out .3;
@@ -42,6 +60,9 @@
 		background-color: $l-green;
 		text-transform: uppercase;
 		font-weight: bold;
+		@media screen and (max-width: 1444px) {
+			margin-top: 0.75rem;
+		}
 		&:hover {
 			background: lighten($l-green, 5%)
 		}

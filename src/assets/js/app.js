@@ -12,15 +12,17 @@ $(document).foundation();
 
 $(document).ready(function() {
 
-  // Materialize.updateTextFields();
-
   $(window).scroll(function() {
     var scrollBody = $(window).scrollTop();
 
     if (scrollBody != 0) {
       $("#navigation").css("top", "0");
     } else {
-      $("#navigation").css("top", "-60px");
+      if (window.matchMedia('(max-width: 1444px)').matches) {
+        $("#navigation").css("top", "-116px");
+      } else {
+        $("#navigation").css("top", "-60px");
+      }
     }
   });
 

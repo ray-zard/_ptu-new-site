@@ -1,0 +1,27 @@
+.reveal {
+	padding-top: 2rem;
+}
+
+.reveal-overlay {
+	background: url(../img/line_diagonal2_white.png), rgba(10, 10, 10, 0.45);
+}
+
+.modal-form {
+
+	&__header {
+		font-size: 1.4rem;
+		font-weight: bold;
+		color: $l-green;
+		text-transform: uppercase;
+	}
+	
+	&__text {
+		line-height: 1.2;
+	}
+	
+	&__btn {
+		background-color: $l-green;
+		margin: 0;
+		text-transform: uppercase;
+	}
+}
