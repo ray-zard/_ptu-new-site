@@ -95,12 +95,13 @@
 		text-align: right;
 	}
 
-	a {
+	button {
 		display: inline-block;
 		color: $l-green;
 		text-transform: uppercase;
 		text-align: right;
 		padding: 1rem;
+		cursor: pointer;
 	}
 }
 

@@ -1,0 +1,11 @@
+.question {
+	&__btn {
+		background-color: $accent;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+		&:hover {
+			background-color: lighten($accent, 10%);
+		}
+	}
+}

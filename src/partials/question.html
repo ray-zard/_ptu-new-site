@@ -2,7 +2,43 @@
 	<div class="grid-container">
 		<div class="cell">
 				<p>Остались вопросы?</p>
-				<a href="#" class="button">Задать вопрос</a>
+				<button class="button question__btn" data-open="questionModal">Задать вопрос</button>
 		</div>
 	</div>
 </section>
+
+
+<div class="reveal modal-form tiny" id="questionModal" data-reveal>
+	<form class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<h6 class="small-12 cell modal-form__header">Задать вопрос</h6>
+			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и наши менеджеры в ближайшее время свяжутся с вами.</p>
+			<div class="small-12 cell">
+				<label>Имя
+					<input type="text" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<label>Телефон
+					<input type="tel" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<label>Email
+					<input type="email" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<label>Вопрос
+					<textarea></textarea>
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<button class="button expanded modal-form__btn">Отправить</button>
+			</div>
+		</div>
+	</form>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>

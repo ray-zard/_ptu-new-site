@@ -9,7 +9,7 @@
 				<p class="accent">Методическое пособие для экологов</p>
 				<p>Удобное пособие для экологов предприятия, а так же для специалистов, не имеющих профильного образования, на которых возложены данные обязанности. Удобный формат, простая подача материала, отсутствие «текстовой воды» делают это издание действительно рабочим инструментом.</p>
 				<p class="recense"><strong>Акшенцева Лейсан Галиахметовна</strong> <br>Директор АНО ДПО Учебно-деловой центр "Специалист"</p>
-				<button class="button">Получить издание</button>
+				<button class="button" data-open="ecoBookModal">Получить издание</button>
 				<p><small>* Распространяется бесплатно</small></p>
 			</div>
 
@@ -20,7 +20,7 @@
 			<div class="doc-list cell medium-6">
 				<p>Скачать полный перечень документов, которые могут быть затребованы при проведении мероприятий по государственному экологическому надзору.</p>
 				<div class="doc-list__footer">
-					<a href="#" class="btn-l-green">Скачать</a>
+					<button class="btn-l-green" data-open="docModal">Скачать</button>
 				</div>
 			</div>
 
@@ -37,3 +37,53 @@
 	</article>
 
 </section>
+
+<div class="reveal modal-form tiny" id="ecoBookModal" data-reveal>
+	<form class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<h6 class="small-12 cell modal-form__header">Получить издание</h6>
+			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и мы в ближайшее время отправим вам методическое пособие для экологов.</p>
+			<div class="small-12 cell">
+				<label>Имя
+					<input type="text" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<label>Email
+					<input type="email" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<button class="button expanded modal-form__btn">Отправить</button>
+			</div>
+		</div>
+	</form>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<div class="reveal modal-form tiny" id="docModal" data-reveal>
+	<form class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<h6 class="small-12 cell modal-form__header">Заказать перечень документов</h6>
+			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и мы в ближайшее время отправим вам полный перечень документов которые могут быть затребованы при проведении мероприятий по государственному экологическому надзору.</p>
+			<div class="small-12 cell">
+				<label>Имя
+					<input type="text" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<label>Email
+					<input type="email" placeholder="">
+				</label>
+			</div>
+			<div class="small-12 cell">
+				<button class="button expanded modal-form__btn">Отправить</button>
+			</div>
+		</div>
+	</form>
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
