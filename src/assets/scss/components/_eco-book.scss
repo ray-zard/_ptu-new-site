@@ -68,6 +68,25 @@
 
 }
 
+.eco-book-qute {
+	position: relative;
+	margin-left: 2rem;
+
+	&::before {
+		position: absolute;
+		content: "\f10e";
+		font: normal normal normal 14px/1 FontAwesome;
+		left: -1.5rem;
+		top: -.5rem;
+	}
+}
+
+.eco-book-link {
+	padding: 1rem;
+	text-align: right;
+	text-transform: uppercase;
+}
+
 .eco-book-wrapper {
 	position: relative;
 }
@@ -112,9 +131,18 @@
 		color: $l-green;
 		font-weight: bold;
 	}
-	p {
+
+	&__link {
+		font-size: .9rem;
+		display: inline-block;
 		line-height: 1.2;
 		color: $white;
-		margin: .3rem;
+		margin-bottom: 1rem;
+		opacity: .7;
+
+		&:hover {
+			color: $white;
+			opacity: 1;
+		}
 	}
 }
