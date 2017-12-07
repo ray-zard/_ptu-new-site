@@ -38,4 +38,12 @@
 		text-align: center;
 		margin-bottom: 3rem;
 	}
+
+	.collective-question {
+		background-color: $accent;
+		margin: 0;
+		&:hover {
+			background-color: lighten($accent, 10%);
+		}
+	}
 }

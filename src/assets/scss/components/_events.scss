@@ -113,6 +113,7 @@
 		margin-top: 2rem;
 		padding: 1rem;
 		max-height: 240px;
+		overflow: hidden;
 
 		h3 {
 			font-size: 1rem;
@@ -144,9 +145,11 @@
 			margin: 0 1rem;
 		}
 
+		button,
 		a {
 			color: $l-green;
 			text-transform: uppercase;
+			cursor: pointer;
 		}
 	}
 }
@@ -171,39 +174,5 @@
 		margin: 0;
 		background-color: $accent;
 		font-weight: bold;
-	}
-}
-
-.slick-initialized .slick-slide {
-	display: flex;
-}
-
-.slick-list,
-.slick-track {
-    height: 100%;
-}
-
-.slick-prev {
-	display: none;
-}
-
-.slick-next {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	font-size: 0;
-	line-height: 0;
-	@include vertical-center;
-	background-color: $l-gray;
-	padding: 1rem;
-	border-top-left-radius: 100%;
-	border-bottom-left-radius: 100%;
-	padding-right: .5rem;
-
-	&::before {
-		content: "\f061";
-		font: normal normal normal 14px/1 FontAwesome;
-    font-size: 20px;
-    line-height: 1;
 	}
 }

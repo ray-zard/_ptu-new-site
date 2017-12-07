@@ -1,0 +1,56 @@
+
+.slick-initialized .slick-slide {
+	display: flex;
+}
+
+.slick-list,
+.slick-track {
+    height: 100%;
+}
+
+.slick-prev {
+	display: none;
+}
+
+.slick-prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	font-size: 0;
+	line-height: 0;
+	@include vertical-center;
+	background-color: $l-gray;
+	padding: 1rem;
+	border-top-right-radius: 100%;
+	border-bottom-right-radius: 100%;
+	padding-left: .5rem;
+	z-index: 1000;
+
+	&::before {
+		content: "\f060";
+		font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    line-height: 1;
+	}
+}
+
+.slick-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+	@include vertical-center;
+	background-color: $l-gray;
+	padding: 1rem;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius: 100%;
+	padding-right: .5rem;
+
+	&::before {
+		content: "\f061";
+		font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    line-height: 1;
+	}
+}

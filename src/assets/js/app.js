@@ -11,14 +11,13 @@ import "./lib/foundation-explicit-pieces";
 $(document).foundation();
 
 $(document).ready(function() {
-
   $(window).scroll(function() {
     var scrollBody = $(window).scrollTop();
 
     if (scrollBody != 0) {
       $("#navigation").css("top", "0");
     } else {
-      if (window.matchMedia('(max-width: 1444px)').matches) {
+      if (window.matchMedia("(max-width: 1444px)").matches) {
         $("#navigation").css("top", "-116px");
       } else {
         $("#navigation").css("top", "-60px");
@@ -30,10 +29,36 @@ $(document).ready(function() {
     infinite: true,
     autoplay: true,
     speed: 300,
-		autoplaySpeed: 5000,
-		rows: 'window',
+    autoplaySpeed: 5000,
+    rows: "window",
     arrows: false,
     swipe: false
+  });
+
+  $("#newsGallery").slick({
+    centerMode: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   // Остановка карусели при на вделении на кнопку
@@ -66,19 +91,18 @@ $(document).ready(function() {
       "active"
     );
   });
-  
+
   $("#slickOne, #slickTwo, #slickThree").slick({
     infinite: true,
     autoplay: true,
     speed: 300,
-		autoplaySpeed: 5000,
-    rows: 'window',
+    autoplaySpeed: 5000,
+    rows: "window",
     slidesToShow: 3,
     arrows: false,
     swipe: false,
     variableWidth: true,
     arrows: true,
-    prevArrow: $('.slick-prev')
+    prevArrow: $(".slick-prev")
   });
-
 });

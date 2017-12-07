@@ -3,182 +3,132 @@
 	<div class="events__wrapper">
 
 		<nav id="slickNav" class="events__navigation">
-			<button data-slide="1" class="events__contol-btn active">Участие компании в отраслевых мероприятиях</button>
+			<button data-slide="1" class="events__contol-btn">Публикации в СМИ</button>
 			<button data-slide="2" class="events__contol-btn">Общественные и социальные мероприятия</button>
-			<button data-slide="3" class="events__contol-btn">Публикации в СМИ</button>
+			<button data-slide="3" class="events__contol-btn active">Участие компании в отраслевых мероприятиях</button>
 		</nav>
 
 		<section id="slickCon" class="events__carousel">
 
 			<div id="slickOne" class="events__cards slick-slide">
-	
+
 				<article class="events__card">
-	
+
 					<div class="events__thumbnail">
 						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-1.jpg" alt="" class="events__img">
+							<img src="http://prominf.ru/files/styles/article_medium/public/image/article/screenshot_53_0.jpg" alt="" class="events__img">
 						</div>
 					</div>
-	
+
 					<div class="events__description">
-						<h3>Татарский нефтегазохимический формум</h3>
-						<p>В Республике Татарстан с 7 по 9 сентября прошел Татарский нефтегазохимический форум, посвященный 100-летию со дня...</p>
+						<h3>Как получить лицензию на обращение с отходами I-IV класса опасности?</h3>
+						<p>Государство пытается законодательно регулировать и контролировать правила обращения с экологически...</p>
 					</div>
-	
+
 					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
+						<a target="_blank" href="http://prominf.ru/article/kak-poluchit-licenziyu-na-obrashchenie-s-othodami-i-iv-klassov-opasnosti"
+						 class="btn-l-green">Подробнее</a>
 					</div>
 				</article>
-	
+
 				<article class="events__card">
-	
+
 					<div class="events__thumbnail">
 						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
+							<img src="http://prominf.ru/files/styles/article_medium/public/image/article/bagnyuk.jpg" alt="" class="events__img">
 						</div>
 					</div>
-	
+
 					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
+						<h3>Как обеспечить экологиескую, правовую и финансовую безопасность при обращении...</h3>
+						<p>Согласно законодательству Российской Федерации каждый вид отходов требует отдельного пас-порта, который...</p>
 					</div>
-	
+
 					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
+						<a target="_blank" href="http://prominf.ru/article/kak-obespechit-ekologicheskuyu-pravovuyu-i-finansovuyu-bezopasnost-pri-obrashchenii-s"
+						 class="btn-l-green">Подробнее</a>
+					</div>
+				</article>
+
+				<article class="events__card">
+
+					<div class="events__thumbnail">
+						<div class="events__img-box">
+							<img src="http://izvestiaur.ru/upload/iblock/39f/dsc_9826.jpg" alt="" class="events__img">
+						</div>
+					</div>
+
+					<div class="events__description">
+						<h3>"День молодежи 2017". Экологическая акция "Полет на воздушном шаре".</h3>
+						<p>Те, кто сдал в утиль батарейки, прокатились на летательном аппарате бесплатно...</p>
+					</div>
+
+					<div class="events__event-btn">
+						<a target="_blank" href="http://izvestiaur.ru/news/view/13486701.html" class="btn-l-green">Подробнее</a>
 					</div>
 				</article>
 
 			</div>
 
 			<div id="slickTwo" class="events__cards slick-slide">
-	
+				{{#each events.events}}
 				<article class="events__card">
-	
+
 					<div class="events__thumbnail">
 						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
+							<img src="{{this.img}}" alt="" class="events__img">
 						</div>
 					</div>
-	
+
 					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
+						<h3>{{this.title}}</h3>
+						<p>{{this.text}}</p>
 					</div>
-	
+
 					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
+						<button class="btn-l-green" data-open="{{this.dataopen}}">Подробнее</button>
 					</div>
 				</article>
-	
-				<article class="events__card">
-	
-					<div class="events__thumbnail">
-						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
-						</div>
-					</div>
-	
-					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
-					</div>
-	
-					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
-					</div>
-				</article>
-	
-				<article class="events__card">
-	
-					<div class="events__thumbnail">
-						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
-						</div>
-					</div>
-	
-					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
-					</div>
-	
-					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
-					</div>
-				</article>
-	
-				<article class="events__card">
-	
-					<div class="events__thumbnail">
-						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
-						</div>
-					</div>
-	
-					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
-					</div>
-	
-					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
-					</div>
-				</article>
-	
-				<article class="events__card">
-	
-					<div class="events__thumbnail">
-						<div class="events__img-box">
-							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
-						</div>
-					</div>
-	
-					<div class="events__description">
-						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
-					</div>
-	
-					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
-					</div>
-				</article>
+				{{/each}}
 
 			</div>
 
 			<div id="slickThree" class="events__cards slick-slide">
-	
+
 				<article class="events__card">
-	
+
 					<div class="events__thumbnail">
 						<div class="events__img-box">
 							<img src="assets/img/events/pc-1-1.jpg" alt="" class="events__img">
 						</div>
 					</div>
-	
+
 					<div class="events__description">
 						<h3>Татарский нефтегазохимический формум</h3>
 						<p>В Республике Татарстан с 7 по 9 сентября прошел Татарский нефтегазохимический форум, посвященный 100-летию со дня...</p>
 					</div>
-	
+
 					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
+						<a href="news1.html" class="btn-l-green">Подробнее</a>
 					</div>
 				</article>
-	
+
 				<article class="events__card">
-	
+
 					<div class="events__thumbnail">
 						<div class="events__img-box">
 							<img src="assets/img/events/pc-1-2.jpg" alt="" class="events__img">
 						</div>
 					</div>
-	
+
 					<div class="events__description">
 						<h3>УЧАСТИЕ В ЕЖЕГОДНОЙ ВЫСТАВКЕ «НЕФТЬ. ГАЗ. ХИМИЯ 2016»</h3>
-						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ. Химия 2016».</p>
+						<p>11 октября 2016 г. на площадке выставочного центра «Пермская ярмарка» стартовала 18-я ежегодная выставка «Нефть. Газ.
+							Химия 2016».</p>
 					</div>
-	
+
 					<div class="events__event-btn">
-						<a href="#" class="btn-l-green">Подробнее</a>
+						<a href="news2.html" class="btn-l-green">Подробнее</a>
 					</div>
 				</article>
 
@@ -189,3 +139,12 @@
 	</div>
 
 </section>
+
+{{#each events.events}}
+<div class="reveal modal-img" id="{{this.dataopen}}" data-reveal>
+	<img src="{{this.img}}" alt="">
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+{{/each}}
