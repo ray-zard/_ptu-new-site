@@ -16,6 +16,9 @@
 	}
 	
 	&__navigation {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
 		height: 100%;
 		width: 20%;
 		background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
@@ -28,7 +31,7 @@
 			list-style: none;
 		}
 	}
-
+	
 	&__contol-btn {
 		height: 100px;
 		display: flex;
@@ -37,12 +40,17 @@
 		align-items: center;
 		line-height: 1.2;
 		font-size: 1rem;
+		font-weight: bold;
 		text-transform: uppercase;
 		padding: .8rem 1rem;
 		color: $main-dark; 
 		background-color: rgba(255, 255, 255, 0.6);
 		border-bottom: 1px solid $l-gray;
 		transition: background-color .2s ease-out;
+	
+		&:first-child {
+			border-top: 1px solid $l-gray;
+		}
 		
 		&:hover {
 			color: $bg-dark;

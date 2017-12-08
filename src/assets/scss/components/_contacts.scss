@@ -1,0 +1,46 @@
+.contacts {
+
+	&__header {
+		font-size: 2rem;
+		font-weight: bold;
+		color: $m-gray;
+	}
+
+	&__img {
+		display: flex;
+    align-items: center;
+	}
+
+	&__person {
+		transform: scale(.8);
+
+		&.none {
+			opacity: 0;
+		}
+	}
+
+	&__contact {
+		margin-bottom: 3rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	&__name {
+		h4 {
+			line-height: 1.2;
+		}
+		strong {
+			text-transform: uppercase;
+		}
+	}
+}
