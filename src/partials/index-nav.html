@@ -1,18 +1,30 @@
 <div id="navigation" class="navigation top-bar">
-  <div class="top-bar-left" data-magellan>
-    <img class="logo-topbar" src="assets/img/logo/logo_LG_ptu_web.svg" alt="Логотип ПромТехУтилизация">
+	<div class="top-bar-left" data-magellan>
+		<img class="logo-topbar" src="assets/img/logo/logo_LG_ptu_web.svg" alt="Логотип ПромТехУтилизация">
 		<ul class="menu">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="#license">Лицензия</a></li>
-			<li><a href="#services">Услуги</a></li>
-			<li><a href="#ecoBook">Азбука эколога</a></li>
-			<li><a href="#company">О компании</a></li>
-			<li><a href="contacts.html">Контакты</a></li>
+			<li>
+				<a href="index.html">Главная</a>
+			</li>
+			<li>
+				<a href="#license">Лицензия</a>
+			</li>
+			<li>
+				<a href="#services">Услуги</a>
+			</li>
+			<li>
+				<a href="#ecoBook">Азбука эколога</a>
+			</li>
+			<li>
+				<a href="#company">О компании</a>
+			</li>
+			<li>
+				<a href="contacts.html">Контакты</a>
+			</li>
 		</ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li>
+	</div>
+	<div class="top-bar-right">
+		<ul class="menu">
+			<li>
 				<ul class="contacts">
 					<li>
 						<i class="fa fa-phone fa-fw" aria-hidden="true"></i>
@@ -24,33 +36,40 @@
 					</li>
 				</ul>
 			</li>
-      <li><button data-open="exampleModal1" type="button" class="button">Заключить договор</button></li>
-    </ul>
-  </div>
+			<li>
+				<button data-open="exampleModal1" type="button" class="button">Заключить договор</button>
+			</li>
+		</ul>
+	</div>
 </div>
 
 <div class="reveal modal-form tiny" id="exampleModal1" data-reveal>
 	<form class="grid-container">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="ПромТехУтилизация">
+		<input type="hidden" name="admin_email" value="office@lider-group.pro">
+		<input type="hidden" name="form_subject" value="Заявка на заключение договора">
+		<!-- END Hidden Required Fields -->
 		<div class="grid-x grid-padding-x">
 			<h6 class="small-12 cell modal-form__header">Заключить договор на утилизацию отходов</h6>
 			<p class="small-12 cell modal-form__text">Отправьте Ваши данные и наши менеджеры свяжутся с вами в ближайшее время.</p>
 			<div class="small-12 cell">
 				<label>Имя
-					<input type="text" placeholder="">
+					<input type="text" name="Имя" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Телефон
-					<input type="tel" placeholder="">
+					<input type="tel" name="Телефон" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Email
-					<input type="email" placeholder="">
+					<input type="email" name="E-mail" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
-				<button class="button expanded modal-form__btn">Отправить</button>
+				<button type="submit" class="button expanded modal-form__btn">Отправить</button>
 			</div>
 		</div>
 	</form>

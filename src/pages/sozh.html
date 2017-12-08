@@ -7,7 +7,7 @@
 		<h1>УТИЛИЗАЦИЯ СОЖ, ОТРАБОТАННЫХ МАСЕЛ, РАСТВОРИТЕЛЕЙ, ЛКМ</h1>
 
 		<section class="medium-4 cell">
-	
+
 			<ul class="service-page__list medium-12 cell">
 				<li>Утилизация СОЖ</li>
 				<li>Отходы лакокрасочных средств</li>
@@ -16,35 +16,42 @@
 				<li>Отходы пластмасс</li>
 				<li>Тара загрязненная ЛКМ</li>
 			</ul>
-	
-			<form class="service-page__form">
 
+			<form class="service-page__form">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="ПромТехУтилизация">
+				<input type="hidden" name="admin_email" value="office@lider-group.pro">
+				<input type="hidden" name="form_subject" value="Получить коммерческое предложение на утилизацию СОЖ, отработанных масел, растворителей, ЛКМ">
+				<!-- END Hidden Required Fields -->
 				<div class="grid-container">
 					<div class="grid-x grid-margin-x">
 						<p class="small-12 cell">Получить коммерческое предложение на утилизацию СОЖ, отработанных масел, растворителей, ЛКМ:</p>
 						<div class="small-12 cell">
 							<label>Имя
-								<input type="text" placeholder="">
+								<input type="text" name="Имя" placeholder="">
 							</label>
 						</div>
 						<div class="small-12 cell">
 							<label>Телефон
-								<input type="tel" placeholder="">
+								<input type="tel" name="Телефон" placeholder="">
 							</label>
 						</div>
 						<div class="small-12 cell">
 							<label>Email
-								<input type="email" placeholder="">
+								<input type="email" name="Email" placeholder="">
 							</label>
 						</div>
 						<div class="small-12 cell">
-							<small class="service-page__form-compliance">*Отправляя форму, вы даете свое согласие на обработку <a href="compliance.html">персональных данных</a></small>
+							<small class="service-page__form-compliance">*Отправляя форму, вы даете свое согласие на обработку
+								<a href="compliance.html">персональных данных</a>
+							</small>
 						</div>
-						<button class="button service-page__form-btn expanded cell">Оставить заявку</button>
+
+						<button type="submit" class="button service-page__form-btn expanded cell">Оставить заявку</button>
 					</div>
 				</div>
 			</form>
-	
+
 		</section>
 
 		<section class="medium-8 cell">
@@ -54,28 +61,32 @@
 				<img src="assets/img/services/4/serv-2.jpg" alt="" class="medium-6 cell service-page__img">
 
 				<div class="service-page__privilege medium-12 cell">
-					Соблюдение норм безопасности с опасными отходами				
+					Соблюдение норм безопасности с опасными отходами
 				</div>
 
 				<div class="service-page__privilege medium-12 cell">
-					Специализированный транспорт					
+					Специализированный транспорт
 				</div>
 
-				<p class="cell service-page__text">Утилизация и обезвреживание СОЖ, отработанного масла, ЛКМ должны проходить с соблюдением экологических норм и правил, так как готовятся эти составы на базе нефтяных масел, синтетических соединений и водно-жировых эмульсий.</p>
+				<p class="cell service-page__text">Утилизация и обезвреживание СОЖ, отработанного масла, ЛКМ должны проходить с соблюдением экологических норм и правил,
+					так как готовятся эти составы на базе нефтяных масел, синтетических соединений и водно-жировых эмульсий.</p>
 
-				<p class="cell service-page__text">Лакокрасочные материалы (ЛКМ), смазочно-охлаждающие жидкости (СОЖ), отработанные масла, смолы, растворители, клеящие вещества, полученные из сырой нефти - все эти типы материалов активно используются в различных видах промышленности.</p>
+				<p class="cell service-page__text">Лакокрасочные материалы (ЛКМ), смазочно-охлаждающие жидкости (СОЖ), отработанные масла, смолы, растворители, клеящие
+					вещества, полученные из сырой нефти - все эти типы материалов активно используются в различных видах промышленности.</p>
 
-				<p class="cell service-page__text">Утилизация СОЖ, отработанных масел, ЛКМ и растворителей требует пристального внимания, так как существует огромное количество прецедентов, когда предприятия не осознавая степень опасности, сбывали данные отходы сторонним организациям как ГСМ. Использование таких отходов в качестве ГСМ не допустимо, так как данные отходы являются высокотоксичными, большинство из них относится к чрезвычайно опасным отходам 1 класса.</p>
+				<p class="cell service-page__text">Утилизация СОЖ, отработанных масел, ЛКМ и растворителей требует пристального внимания, так как существует огромное количество
+					прецедентов, когда предприятия не осознавая степень опасности, сбывали данные отходы сторонним организациям как ГСМ.
+					Использование таких отходов в качестве ГСМ не допустимо, так как данные отходы являются высокотоксичными, большинство
+					из них относится к чрезвычайно опасным отходам 1 класса.</p>
 
 			</div>
 		</section>
-		
-		
+
+
 	</div>
 
 
 
 </main>
 
-{{> question}}
-{{> footer}}
+{{> question}} {{> footer}}

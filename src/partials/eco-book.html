@@ -4,15 +4,23 @@
 		<div class="eco-book-content grid-x grid-margin-x">
 
 			<div class="eco-book-text cell medium-6">
-				<h2 class="header">Решение <br>главных вопросов <br>экологии</h2>
+				<h2 class="header">Решение
+					<br>главных вопросов
+					<br>экологии</h2>
 				<p class="sub-heder">Информационный продукт не имеющий аналогов в России</p>
 				<p class="accent">Методическое пособие для экологов</p>
-				<p class="eco-book-qute">Удобное пособие для экологов предприятия, а так же для специалистов, не имеющих профильного образования, на которых возложены данные обязанности. Удобный формат, простая подача материала, отсутствие «текстовой воды» делают это издание действительно рабочим инструментом.</p>
-				<p class="recense"><strong>Акшенцева Лейсан Галиахметовна</strong> <br>Директор АНО ДПО Учебно-деловой центр "Специалист"</p>
+				<p class="eco-book-qute">Удобное пособие для экологов предприятия, а так же для специалистов, не имеющих профильного образования, на которых возложены
+					данные обязанности. Удобный формат, простая подача материала, отсутствие «текстовой воды» делают это издание действительно
+					рабочим инструментом.</p>
+				<p class="recense">
+					<strong>Акшенцева Лейсан Галиахметовна</strong>
+					<br>Директор АНО ДПО Учебно-деловой центр "Специалист"</p>
 				<div class="grid-x grid-margin-x">
 					<div class="medium-6 cell">
 						<button class="button" data-open="ecoBookModal">Получить издание</button>
-						<p><small>* Распространяется бесплатно</small></p>
+						<p>
+							<small>* Распространяется бесплатно</small>
+						</p>
 					</div>
 					<div class="eco-book-link medium-6 cell">
 						<a href="http://prominf.ru/article/azbuka-ekologa" target="_blank">Подробнее</a>
@@ -25,7 +33,8 @@
 			<div class="cell medium-6"></div>
 
 			<div class="doc-list cell medium-6">
-				<p>Скачать полный перечень документов, которые могут быть затребованы при проведении мероприятий по государственному экологическому надзору.</p>
+				<p>Скачать полный перечень документов, которые могут быть затребованы при проведении мероприятий по государственному экологическому
+					надзору.</p>
 				<div class="doc-list__footer">
 					<button class="btn-l-green" data-open="docModal">Скачать</button>
 				</div>
@@ -35,7 +44,8 @@
 				<h4>Деятельность компании регламентируется:</h4>
 				<a href="http://www.consultant.ru/document/cons_doc_LAW_19109/ " class="doc-sublist__link">Федеральный закон № 89-ФЗ «Об отходах производства и потребления».</a>
 				<a href="http://www.consultant.ru/document/cons_doc_LAW_22481/ " class="doc-sublist__link">Федеральный закон №52-ФЗ «Осанитарно-эпидемиологическом благополучии населения».</a>
-				<a href="http://base.garant.ru/4179201/ " class="doc-sublist__link">Постановление Главного санитарного врача РФ № 80 «О введении в действие санитарно-эпидемиологических правил и нормативов СанПиН 2.1.7.1322-03»</a>
+				<a href="http://base.garant.ru/4179201/ " class="doc-sublist__link">Постановление Главного санитарного врача РФ № 80 «О введении в действие санитарно-эпидемиологических правил и нормативов
+					СанПиН 2.1.7.1322-03»</a>
 			</div>
 
 		</div>
@@ -46,20 +56,25 @@
 <div class="reveal modal-form tiny" id="ecoBookModal" data-reveal>
 	<form class="grid-container">
 		<div class="grid-x grid-padding-x">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="ПромТехУтилизация">
+			<input type="hidden" name="admin_email" value="office@lider-group.pro">
+			<input type="hidden" name="form_subject" value="Заявка на получение азбуки эколога">
+			<!-- END Hidden Required Fields -->
 			<h6 class="small-12 cell modal-form__header">Получить издание</h6>
 			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и мы в ближайшее время отправим вам методическое пособие для экологов.</p>
 			<div class="small-12 cell">
 				<label>Имя
-					<input type="text" placeholder="">
+					<input type="text" name="Имя" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Email
-					<input type="email" placeholder="">
+					<input type="email" name="E-mail" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
-				<button class="button expanded modal-form__btn">Отправить</button>
+				<button type="submit" class="button expanded modal-form__btn">Отправить</button>
 			</div>
 		</div>
 	</form>
@@ -70,21 +85,27 @@
 
 <div class="reveal modal-form tiny" id="docModal" data-reveal>
 	<form class="grid-container">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="ПромТехУтилизация">
+		<input type="hidden" name="admin_email" value="office@lider-group.pro">
+		<input type="hidden" name="form_subject" value="Заявка на получение перечня документов">
+		<!-- END Hidden Required Fields -->
 		<div class="grid-x grid-padding-x">
 			<h6 class="small-12 cell modal-form__header">Заказать перечень документов</h6>
-			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и мы в ближайшее время отправим вам полный перечень документов которые могут быть затребованы при проведении мероприятий по государственному экологическому надзору.</p>
+			<p class="small-12 cell modal-form__text">Отправьте Ваши контакты и мы в ближайшее время отправим вам полный перечень документов которые могут быть затребованы
+				при проведении мероприятий по государственному экологическому надзору.</p>
 			<div class="small-12 cell">
 				<label>Имя
-					<input type="text" placeholder="">
+					<input type="text" name="Имя" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Email
-					<input type="email" placeholder="">
+					<input type="email" name="Email" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
-				<button class="button expanded modal-form__btn">Отправить</button>
+				<button type="submit" class="button expanded modal-form__btn">Отправить</button>
 			</div>
 		</div>
 	</form>

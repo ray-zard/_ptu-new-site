@@ -1,20 +1,25 @@
 <div class="reveal tiny modal-form" id="callBack" data-reveal>
 	<form class="grid-container">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="ПромТехУтилизация">
+		<input type="hidden" name="admin_email" value="office@lider-group.pro">
+		<input type="hidden" name="form_subject" value="Заявка на обратный звонок">
+		<!-- END Hidden Required Fields -->
 		<div class="grid-x grid-padding-x">
 			<h6 class="small-12 cell modal-form__header">Заказать обратный звонок</h6>
 			<p class="small-12 cell modal-form__text">Отправьте Ваши данные. Специалист нашей компании позвонит Вам и бесплатно проконсультирует по впоросам обращения с промышленными отходами.</p>
 			<div class="small-12 cell">
 				<label>Имя
-					<input type="text" placeholder="">
+					<input type="text" name="Имя" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Телефон
-					<input type="tel" placeholder="">
+					<input type="tel" name="Телефон" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
-				<button class="button expanded modal-form__btn">Отправить</button>
+				<button type="submit" class="button expanded modal-form__btn">Отправить</button>
 			</div>
 		</div>
 	</form>

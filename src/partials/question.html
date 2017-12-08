@@ -10,31 +10,36 @@
 
 <div class="reveal modal-form tiny" id="questionModal" data-reveal>
 	<form class="grid-container">
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="ПромТехУтилизация">
+		<input type="hidden" name="admin_email" value="office@lider-group.pro">
+		<input type="hidden" name="form_subject" value="Консультация по обращению с отходами">
+		<!-- END Hidden Required Fields -->
 		<div class="grid-x grid-padding-x">
 			<h6 class="small-12 cell modal-form__header">Консультация по обращению с отходами</h6>
 			<p class="small-12 cell modal-form__text">Отправьте Ваши данные. Опишите проблему. Специалист нашей компании позвонит Вам и бесплатно проконсультирует по вопросам обращения с промышленными отходами.</p>
 			<div class="small-12 cell">
 				<label>Имя
-					<input type="text" placeholder="">
+					<input type="text" name="Имя" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Телефон
-					<input type="tel" placeholder="">
+					<input type="tel" name="Телефон" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Email
-					<input type="email" placeholder="">
+					<input type="email" name="Email" placeholder="">
 				</label>
 			</div>
 			<div class="small-12 cell">
 				<label>Вопрос
-					<textarea></textarea>
+					<textarea name="Вопрос"></textarea>
 				</label>
 			</div>
 			<div class="small-12 cell">
-				<button class="button expanded modal-form__btn">Отправить</button>
+				<button type="submit" class="button expanded modal-form__btn">Отправить</button>
 			</div>
 		</div>
 	</form>
