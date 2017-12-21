@@ -2,6 +2,9 @@
 	height: 600px;
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 420px) {
+		display: none;
+	}
 
 	&__carousel {
 		position: relative;

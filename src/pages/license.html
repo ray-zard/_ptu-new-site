@@ -16,15 +16,15 @@ description: Лицензия на утилизацию отходов, лице
 
 				<div class="license medium-6 cell">
 					<div class="grid-x grid-margin-x">
-						<img class="license__img small-6 cell" src="assets/img/license/license-ptu-1.jpg" alt="">
-						<img class="license__img small-6 cell" src="assets/img/license/license-ptu-2.jpg" alt="">
+						<a data-open="licOneModal" class="license__img small-6 cell"><img src="assets/img/license/license-ptu-1.jpg" alt=""></a>
+						<a data-open="licTwoModal" class="license__img small-6 cell"> <img src="assets/img/license/license-ptu-2.jpg" alt=""></a>
 					</div>
 				</div>
 
 				<div class="license medium-6 cell">
 					<div class="grid-x grid-margin-x">
-						<img class="license__img small-6 cell" src="assets/img/license/license-lider-1.jpg" alt="">
-						<img class="license__img small-6 cell" src="assets/img/license/license-lider-2.jpg" alt="">
+						<a data-open="licThreeModal" class="license__img small-6 cell"><img src="assets/img/license/license-lider-1.jpg" alt=""></a>
+						<a data-open="licFourModal" class="license__img small-6 cell"><img src="assets/img/license/license-lider-2.jpg" alt=""></a>	
 					</div>
 				</div>
 
@@ -43,6 +43,34 @@ description: Лицензия на утилизацию отходов, лице
 
 
 </main>
+
+<div class="reveal modal-form tiny" id="licOneModal" data-reveal>
+	<img src="assets/img/license/license-ptu-1.jpg" alt="">
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<div class="reveal modal-form tiny" id="licTwoModal" data-reveal>
+	<img src="assets/img/license/license-ptu-2.jpg" alt="">
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<div class="reveal modal-form tiny" id="licThreeModal" data-reveal>
+	<img src="assets/img/license/license-lider-1.jpg" alt="">
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+<div class="reveal modal-form tiny" id="licFourModal" data-reveal>
+	<img src="assets/img/license/license-lider-2.jpg" alt="">
+	<button class="close-button" data-close aria-label="Close reveal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
 
 {{> question}}
 {{> footer}}

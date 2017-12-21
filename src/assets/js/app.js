@@ -11,17 +11,18 @@ import "./lib/foundation-explicit-pieces";
 $(document).foundation();
 
 $(document).ready(function() {
+  
+  var heightNav = $('#navigation').outerHeight();
+
+  $('#navigation').css('top', -heightNav);
+
   $(window).scroll(function() {
     var scrollBody = $(window).scrollTop();
 
     if (scrollBody != 0) {
       $("#navigation").css("top", "0");
     } else {
-      if (window.matchMedia("(max-width: 1444px)").matches) {
-        $("#navigation").css("top", "-116px");
-      } else {
-        $("#navigation").css("top", "-60px");
-      }
+      $("#navigation").css("top", -heightNav);
     }
   });
 

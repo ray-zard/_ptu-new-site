@@ -7,6 +7,11 @@
 		line-height: 1.2;
 		text-transform: uppercase;
 		margin: 3rem 0;
+
+		@media screen and (max-width: 800px) {
+			font-size: 1.6rem;
+			padding: 0 1rem;
+		}
 	}
 
 	&__list {
@@ -20,6 +25,9 @@
 		background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
 		border: 1px solid $l-gray;
 		padding-top: 1rem;
+		@media screen and (max-width: 800px) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__form-btn {
@@ -54,6 +62,10 @@
 		text-transform: uppercase;
 		padding-left: 4rem;
 		border: 1px solid $l-gray;
+
+		@media screen and (max-width: 640px) {
+			font-size: .8rem;
+		}
 
 		&::before {
 			position: absolute;

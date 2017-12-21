@@ -3,6 +3,9 @@
 	height: 100vh;
 	background: url(../img/line_diagonal2_black.png), linear-gradient(45deg, rgba(24,21,21,1) 0%,rgba(58,46,40,1) 100%);
 	overflow: hidden;
+	@media screen and (max-width: 420px) {
+		display: none;
+	}
 }
 
 .eco-book-container {

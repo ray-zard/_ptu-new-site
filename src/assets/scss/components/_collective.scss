@@ -3,6 +3,10 @@
 	background: url(../img/line_diagonal2.png), linear-gradient(180deg, #ffffff, #fff), center no-repeat #fff scroll;
 	border-bottom: 1px solid $l-gray;
 
+	@media screen and (max-width: 420px) {
+		display: none;
+	}
+
 	.grid-container {
 		height: 100%;
 		display: flex;

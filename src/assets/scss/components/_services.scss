@@ -6,6 +6,7 @@
 	margin-top: 3rem;
 
 	.doc-img {
+		margin-bottom: 1rem;
 
 	}
 
@@ -23,6 +24,9 @@
 	line-height: 1.2;
 	font-size: 2rem;
 	font-weight: bold;
+	@media screen and (max-width: 420px) {
+		font-size: 1.2rem;
+	}
 }
 
 .services-text {
@@ -69,17 +73,26 @@
 		border-color: transparent transparent transparent #ffffff;
 		z-index: 100;
 	}
+
+	@media screen and (max-width: 800px) {
+		width: 100%;
+		padding: 0;
+
+		&::after {
+			display: none;
+		}
+	}
 }
 
 .services-product {
 	position: relative;
 	width: 25%;
 	margin: 0;
-
+	
 	img {
 		width: 100%;
 	}
-
+	
 	h3 {
 		color: $white;
 		font-weight: bold;
@@ -96,6 +109,21 @@
 			margin-bottom: .3rem;
 		}
 	}
+	
+		@media screen and (max-width: 800px) {
+			width: 50%;
+
+			h3 {
+				font-size: .6rem;
+				padding: .5rem 0;
+				ul {
+					margin-bottom: 0;
+				}
+				li {
+					margin-bottom: 0;
+				}
+			}
+		}
 	
 	&::after {
 		content: "";

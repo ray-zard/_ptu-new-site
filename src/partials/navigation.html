@@ -1,48 +1,74 @@
-<div id="navigation" class="navigation top-bar">
-	<div class="top-bar-left" data-magellan>
-		<img class="logo-topbar" src="assets/img/logo/logo_LG_ptu_web.svg" alt="Логотип ПромТехУтилизация">
-		<ul class="menu">
-			<li>
-				<a href="index.html">Главная</a>
-			</li>
-			<li>
-				<a href="/#license">Лицензия</a>
-			</li>
-			<li>
-				<a href="/#services">Услуги</a>
-			</li>
-			<li>
-				<a href="/#ecoBook">Азбука эколога</a>
-			</li>
-			<li>
-				<a href="/#company">О компании</a>
-			</li>
-			<li>
-				<a href="contacts.html">Контакты</a>
-			</li>
-		</ul>
-	</div>
-	<div class="top-bar-right">
-		<ul class="menu">
-			<li>
-				<ul class="contacts">
-					<li>
-						<i class="fa fa-phone fa-fw" aria-hidden="true"></i>
-						<a href="tel:+73412776631">+7 (3412) 77-66-31</a>
-					</li>
-					<li>
-						<i class="fa fa-envelope-open-o fa-fw" aria-hidden="true"></i>
-						<a href="mailto:office@lider-group.pro">office@lider-group.pro</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<button data-open="exampleModal1" type="button" class="button">Заключить договор</button>
-			</li>
-		</ul>
-	</div>
-</div>
+<div {{#ifpage 'index'}} id="navigation"{{/ifpage}}	class="navigation">
 
+	<div class="navigation__left-bar" data-magellan>
+
+		<a class="navigation__logo" href="/">
+			<img src="assets/img/logo/logo_LG_ptu_web.svg" alt="Логотип ПромТехУтилизация">
+		</a>
+		
+		<ul class="navigation__menu">
+
+			{{#ifpage 'index'}}
+				<li class="navigation__none">
+					<a href="#hero">Главная</a>
+				</li>
+				<li>
+					<a href="#license">Лицензия</a>
+				</li>
+				<li>
+					<a href="#services">Услуги</a>
+				</li>
+				<li class="navigation__none">
+					<a href="#ecoBook">Азбука эколога</a>
+				</li>
+				<li class="navigation__none">
+					<a href="#company">О компании</a>
+				</li>
+				<li>
+					<a href="contacts.html">Контакты</a>
+				</li>
+			{{/ifpage}}
+
+			{{#unlesspage 'index'}}
+				<li>
+					<a href="/">Главная</a>
+				</li>
+				<li>
+					<a href="/#license">Лицензия</a>
+				</li>
+				<li>
+					<a href="/#services">Услуги</a>
+				</li>
+				<li class="navigation__none">
+					<a href="/#ecoBook">Азбука эколога</a>
+				</li>
+				<li class="navigation__none">
+					<a href="/#company">О компании</a>
+				</li>
+				<li>
+					<a href="contacts.html">Контакты</a>
+				</li>
+			{{/unlesspage}}
+
+		</ul>
+	</div>
+
+	<div class="navigation__right-bar">
+		<ul class="navigation__contacts">
+			<li>
+				<i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+				<a href="tel:+73412776631">+7 (3412) 77-66-31</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open-o fa-fw" aria-hidden="true"></i>
+				<a href="mailto:office@lider-group.pro">office@lider-group.pro</a>
+			</li>
+		</ul>
+		<button data-open="exampleModal1" type="button" class="button navigation__btn">Заключить договор</button>
+	</div>
+	
+</div>
+	
 <div class="reveal modal-form tiny" id="exampleModal1" data-reveal>
 	<form class="grid-container">
 		<!-- Hidden Required Fields -->

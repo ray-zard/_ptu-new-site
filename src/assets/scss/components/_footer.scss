@@ -54,6 +54,13 @@
 		flex-wrap: wrap;
 		align-content: center;
 		padding-top: 1rem;
+		padding-left: 2rem;
+		flex-direction: column;
+
+		@media screen and (max-width: 420px) {
+			padding-left: 0;
+			justify-content: center;
+		}
 	}
 
 	&__contact {
