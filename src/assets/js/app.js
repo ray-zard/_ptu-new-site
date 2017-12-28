@@ -11,10 +11,9 @@ import "./lib/foundation-explicit-pieces";
 $(document).foundation();
 
 $(document).ready(function() {
-  
-  var heightNav = $('#navigation').outerHeight();
+  var heightNav = $("#navigation").outerHeight();
 
-  $('#navigation').css('top', -heightNav);
+  $("#navigation").css("top", -heightNav);
 
   $(window).scroll(function() {
     var scrollBody = $(window).scrollTop();
@@ -106,21 +105,34 @@ $(document).ready(function() {
     arrows: true,
     prevArrow: $(".slick-prev")
   });
-  
+
   //E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+  $("form").submit(function() {
+    //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      alert("Спасибо!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
+
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  particlesJS.load("particles-js", "assets/js/particles.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
+  particlesJS.load("particles-js-1", "assets/js/particles.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
+  particlesJS.load("particles-js-2", "assets/js/particles.json", function() {
+    console.log("callback - particles.js config loaded");
+  });
+
 });

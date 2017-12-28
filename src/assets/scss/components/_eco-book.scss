@@ -1,4 +1,5 @@
 .eco-book {
+	position: relative;
 	min-height: 980px;
 	height: 100vh;
 	background: url(../img/line_diagonal2_black.png), linear-gradient(45deg, rgba(24,21,21,1) 0%,rgba(58,46,40,1) 100%);
@@ -9,7 +10,9 @@
 }
 
 .eco-book-container {
+	position: relative;
 	height: 100%;
+	z-index: 100;
 }
 
 .eco-book-content {

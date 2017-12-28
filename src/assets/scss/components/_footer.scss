@@ -1,6 +1,11 @@
 .footer {
+	position: relative;
 	background: url(../img/line_diagonal2_black.png), linear-gradient(0deg, rgba(24,21,21,1) 0%,rgba(58,46,40,1) 100%);
 
+	&__wrapper {
+		position: relative;
+		z-index: 100;
+	}
 	&__grid {
 		padding-top: 2rem;
 	}
