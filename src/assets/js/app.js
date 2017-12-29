@@ -135,4 +135,15 @@ $(document).ready(function() {
     console.log("callback - particles.js config loaded");
   });
 
+  $(".privileges-logo.play").on("click", function(ev) {
+    $("#playMove")[0].src += "&autoplay=1";
+    ev.preventDefault();
+  });
+
+  $("#moveModal button").on("click", function(ev) {
+    $("#playMove")[0].src = "https://www.youtube.com/embed/rnd6R7IQpcs?rel=0";
+    ev.preventDefault();
+  });
+
+
 });
