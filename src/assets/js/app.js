@@ -29,16 +29,18 @@ $(document).ready(function() {
     infinite: true,
     autoplay: true,
     speed: 300,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     rows: "window",
     arrows: false,
-    swipe: false
+    swipe: false,
+    fade: true
   });
 
   $("#newsGallery").slick({
     centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 768,
@@ -61,7 +63,7 @@ $(document).ready(function() {
     ]
   });
 
-  // Остановка карусели при на вделении на кнопку
+  // Остановка карусели при навделении на кнопку
 
   $("button[data-slide]").hover(
     function() {
@@ -70,7 +72,7 @@ $(document).ready(function() {
     function() {
       $("#slickCon").slick("slickPlay");
     }
-  );
+  )
 
   // Привязка номера кнопки к слайду
 
@@ -93,10 +95,7 @@ $(document).ready(function() {
   });
 
   $("#slickOne, #slickTwo, #slickThree").slick({
-    infinite: true,
-    autoplay: true,
-    speed: 300,
-    autoplaySpeed: 5000,
+    autoplay: false,
     rows: "window",
     slidesToShow: 3,
     arrows: false,

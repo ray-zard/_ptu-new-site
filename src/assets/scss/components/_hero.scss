@@ -154,7 +154,6 @@
 
 		&.play {
 			&:hover:before {
-				color: $accent;
 			}
 		}
 
@@ -192,6 +191,7 @@
 }
 
 .privileges-logo {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -202,10 +202,10 @@
 	overflow: hidden;
 	
 	&.play {
-		background-color: $accent;
-		
+		position: relative;
+    left: 3rem;
 		&:hover {
-			background-color: darken($accent, 15%);
+			background-color: lighten($l-green, 15%);
 
 		}
 	}
@@ -240,15 +240,6 @@
 		background-color: $l-green;
 	}
 	
-	&.play {
-		&::before {
-			background-color: $accent;
-		}
-		span {
-			opacity: .9;
-		}
-	}
-	
 	span {
 		color: $white;
 		opacity: .7;
@@ -266,8 +257,15 @@
 	}
 	
 	.play {
-		
 		margin: 0;
+		padding: 1rem;
+		padding-left: 4rem;
+		background-color: $white;
+
+		span {
+			font-weight: bold;
+			color: $l-green;
+		}
 	}
 }
 
@@ -318,10 +316,10 @@
 	.close-button {
 		font-size: 5rem;
 		span {
-			color: $accent;
+			color: $white;
 			text-shadow: 0px 2px 12px rgba(0, 0, 0, 1);
 			&:hover  {
-				color: darken($accent, 15%);
+				color: lighten($l-green, 15%);
 				text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
 
 			}
