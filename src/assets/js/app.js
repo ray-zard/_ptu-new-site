@@ -123,25 +123,22 @@ $(document).ready(function() {
     return false;
   });
 
-  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  particlesJS.load("particles-js", "assets/js/particles.json", function() {
-    console.log("callback - particles.js config loaded");
-  });
-  particlesJS.load("particles-js-1", "assets/js/particles.json", function() {
-    console.log("callback - particles.js config loaded");
-  });
-  particlesJS.load("particles-js-2", "assets/js/particles.json", function() {
-    console.log("callback - particles.js config loaded");
-  });
-
-  $(".privileges-logo.play").on("click", function(ev) {
+  $(".play__content").on("click", function(ev) {
     $("#playMove")[0].src += "&autoplay=1";
     ev.preventDefault();
   });
 
   $("#moveModal button").on("click", function(ev) {
-    $("#playMove")[0].src = "https://www.youtube.com/embed/rnd6R7IQpcs?rel=0";
+    $("#playMove")[0].src = "https://www.youtube.com/embed/qYgpAVAAV_8?rel=0";
     ev.preventDefault();
+  });
+
+  $('.play__content').animate({
+
+  }, 3000);
+
+  $('.play__content').css('background-image', 'url(assets/img/gifka.gif)').on('load', function() {
+    $(this).css('background-image', 'url(assets/img/gifka.gif)');
   });
 
 

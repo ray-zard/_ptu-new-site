@@ -18,6 +18,7 @@
 		display: flex;
     flex-wrap: wrap;
 		justify-content: center;
+		align-content: flex-start;
 		p {
 			text-transform: uppercase;
 			color: $white;
@@ -83,8 +84,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 16vh 0;
-		padding-top: 20vh;
+		min-height: 20rem;
 
 		@media screen and (max-width: 800px) {
 			font-size: 2.4rem;
@@ -127,6 +127,9 @@
 
 .hero-bg {
 	padding-top: 2rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
 	@media screen and (max-width: 420px) {
 		padding: 0;
 	}
@@ -145,10 +148,8 @@
 
 .privileges {
 	margin-bottom: 3vh;
-
-	&.play {
-		margin-top: 3vh;
-	}
+	display: flex;
+	align-items: center;
 	
 	&__link {
 		position: relative;
@@ -157,11 +158,6 @@
 		font-weight: bold;
 		margin-bottom: .3rem;
 		margin-left: 1.2em;
-
-		&.play {
-			&:hover:before {
-			}
-		}
 
 		&:before {
 			content: "\f061";
@@ -206,15 +202,6 @@
 	height: 6rem;
 	border-radius: 100%;
 	overflow: hidden;
-	
-	&.play {
-		position: relative;
-    left: 3rem;
-		&:hover {
-			background-color: lighten($l-green, 15%);
-
-		}
-	}
 
 	i {
 		color: $white;
@@ -253,36 +240,6 @@
 		display: inline-block;
 	}
 	
-}
-
-.privileges-content {
-
-	.header-play {
-		color: $l-green;
-		padding: .3rem;
-		padding-left: 3rem;
-		text-transform: uppercase;
-		font-size: 1.2rem;
-		font-weight: bold;
-		background-color: rgba(0, 0, 0, 0.5);
-	}
-	
-	&.play {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.play {
-		margin: 0;
-		padding: .5rem 2rem;
-		background-color: $white;
-
-		span {
-			font-weight: bold;
-			color: $l-green;
-		}
-	}
 }
 
 .sub-content {
