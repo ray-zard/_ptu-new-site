@@ -105,7 +105,11 @@
 					</div>
 
 					<div class="events__event-btn">
+						{{#if this.link}}
+						<a class="btn-l-green" target="_blank" href="{{this.link}}">Подробнее</a>
+						{{else}}
 						<button class="btn-l-green" data-open="{{this.dataopen}}">Подробнее</button>
+						{{/if}}
 					</div>
 				</article>
 				{{/each}}
