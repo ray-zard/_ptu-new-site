@@ -137,8 +137,8 @@ $(document).ready(function() {
 
   }, 3000);
 
-  $('.play__content').css('background-image', 'url(assets/img/gifka.gif)').on('load', function() {
-    $(this).css('background-image', 'url(assets/img/gifka.gif)');
+  $('.play__content').css('background-image', 'url(assets/img/gifka0.gif)').on('load', function() {
+    $(this).css('background-image', 'url(assets/img/gifka0.gif)');
   });
 
 
