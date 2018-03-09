@@ -13,8 +13,9 @@
 		flex-direction: column;
 		align-items: center;
 		overflow: hidden;
+		background-image: url(../img/maxresdefault.jpg);
 		background-position: 50% 50%;
-		background-size: 100% 105%; 
+		background-size: 100% 105%;
 		
 		&::before {
 			position: absolute;

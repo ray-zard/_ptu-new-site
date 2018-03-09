@@ -114,6 +114,7 @@ $(document).ready(function() {
       url: "mail.php", //Change
       data: th.serialize()
     }).done(function() {
+      yaCounter39324415.reachGoal('orderSend'); return true;
       alert("Спасибо!");
       setTimeout(function() {
         // Done Functions
@@ -124,22 +125,17 @@ $(document).ready(function() {
   });
 
   $(".play__content").on("click", function(ev) {
-    $("#playMove")[0].src += "&autoplay=1";
+    $('#playMove').append('<iframe width="985" height="554" src="https://www.youtube.com/embed/qYgpAVAAV_8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+    $("#playMove iframe")[0].src += "&autoplay=1";
     ev.preventDefault();
   });
 
   $("#moveModal button").on("click", function(ev) {
-    $("#playMove")[0].src = "https://www.youtube.com/embed/qYgpAVAAV_8?rel=0";
+    $("#playMove iframe")[0].src = "https://www.youtube.com/embed/qYgpAVAAV_8?rel=0";
+    $("#playMove").empty();
     ev.preventDefault();
   });
 
-  $('.play__content').animate({
-
-  }, 3000);
-
-  $('.play__content').css('background-image', 'url(assets/img/gifka0.gif)').on('load', function() {
-    $(this).css('background-image', 'url(assets/img/gifka0.gif)');
-  });
-
+  $('.play__content').css('background-image', 'url(assets/img/gifka0.gif)');
 
 });
