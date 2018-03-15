@@ -114,7 +114,6 @@ $(document).ready(function() {
       url: "mail.php", //Change
       data: th.serialize()
     }).done(function() {
-      yaCounter39324415.reachGoal('orderSend'); return true;
       alert("Спасибо!");
       setTimeout(function() {
         // Done Functions
@@ -123,19 +122,72 @@ $(document).ready(function() {
     });
     return false;
   });
+  
+  $('form button[type="submit"]').click(function() {
+    yaCounter39324415.reachGoal('orderSend');
+    return true;
+  });
 
   $(".play__content").on("click", function(ev) {
     $('#playMove').append('<iframe width="985" height="554" src="https://www.youtube.com/embed/qYgpAVAAV_8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
     $("#playMove iframe")[0].src += "&autoplay=1";
     ev.preventDefault();
   });
-
+  
   $("#moveModal button").on("click", function(ev) {
     $("#playMove iframe")[0].src = "https://www.youtube.com/embed/qYgpAVAAV_8?rel=0";
     $("#playMove").empty();
     ev.preventDefault();
   });
-
+  
   $('.play__content').css('background-image', 'url(assets/img/gifka0.gif)');
+
+  $(".present-window__content").on("click", function(ev) {
+    $('#playMove').append('<iframe width="985" height="554" src="https://www.youtube.com/embed/qYgpAVAAV_8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>');
+    $("#playMove iframe")[0].src += "&autoplay=1";
+    ev.preventDefault();
+  });
+
+  var heigthBlock = $('.present-window__content').outerHeight();
+
+  $('#pw').css({
+    'bottom' : '-' + heigthBlock + 'px'
+  });
+  
+  setTimeout (function() {
+    
+    $('#pw').css({
+      
+      'bottom' : '0',
+      'opacity' : '1'
+      
+    }).ready(function() {
+      
+      $('#pw > img').attr('src', 'assets/img/gifka0.gif');
+      
+    });
+    
+  }, 10000);
+  
+  $('#pw .present-window__close').click(function() {
+    $('#pw').css({
+
+      'bottom' : '-' + heigthBlock + 'px',
+      'opacity' : '0'
+      
+    })
+
+    setTimeout (function() {
+    
+      $('#pw').css({
+          
+        'display' : 'none'
+        
+      });
+        
+      }, 500);
+  })
+
+
 
 });
